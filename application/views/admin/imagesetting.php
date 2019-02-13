@@ -23,9 +23,10 @@
 	<div class="content">
         <div class="container-fluid">
         	<div class="row">
-        		<div class="col-sm-4">
+                <div class="col-sm-3">
+                    <h2>Slider Images</h2></div>
+        		<div class="col-sm-6">
         			<div class="modal-body">
-        				<h2>Slider Images</h2>
         				<?= form_open_multipart('admin/addSlider');?>
         					<h4 class="text-primary">Choose Your Image</h4><input type="file" name="image" placeholder="Choose Image" required=""><code>Size Should be 1200*700 Pixels</code><br><br>
         					<input type="submit" class="btn" name="submit" value="Upload">
@@ -59,12 +60,14 @@
                             </table>
         			</div>
         		</div>
+                <div class="col-sm-3"></div>
         	</div>
         	<hr>
         	<div class="row">
-        		<div class="col-sm-4">
+                <div class="col-sm-3">
+                    <h2>Portfolio Images</h2></div>
+        		<div class="col-sm-6">
         			<div class="modal-body">
-        				<h2>Portfolio Images</h2>
         				<?=form_open_multipart('admin/insert_portfolio_image');?>
         					<h4 class="text-primary">Choose Your Image</h4>
                             <input type="file" name="portfolio_image" placeholder="Choose Image" required=""><code>Size Should be 400*300 Pixels</code><br><br>
@@ -103,6 +106,7 @@
                             </table>
         			</div>
         		</div>
+                <div class="col-sm-3"></div>
         	</div>
         </div>
       </div>
